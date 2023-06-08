@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.bharath.entities.User"/>
+    <fullyQualifiedTypeName name="com.bharath.entities.Role"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="com.bharath.entities.Reservation"/>
+    <fullyQualifiedTypeName name="com.bharath.entities.Passenger"/>
+    <fullyQualifiedTypeName name="com.bharath.Repo.FlightRepository"/>
+    <fullyQualifiedTypeName name="com.bharath.entities.Flight"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="com.bharath.entities.AbstractEntity"/>
+</qualifiedTypeNameHistroy>

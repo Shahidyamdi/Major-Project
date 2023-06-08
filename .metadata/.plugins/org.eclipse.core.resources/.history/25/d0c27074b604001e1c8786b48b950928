@@ -1,0 +1,12 @@
+package com.bharath.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
+	
+	public String showRegister() {
+		return "registerUser";
+	}
+
+}
