@@ -1,0 +1,29 @@
+package com.bharath.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bharath.Repo.UserRepository;
+import com.bharath.entities.User;
+
+@Controller
+public class UserController {
+
+	private UserRepository userRepository;
+
+	@RequestMapping("/showReg")
+	public String showRegister() {
+		return "registerUser";
+	}
+
+	@PostMapping("/login")
+	public String Register(@ModelAttribute("user") User user) {
+		userRepository.save(user);
+
+		return "login";
+
+	}
+
+}
