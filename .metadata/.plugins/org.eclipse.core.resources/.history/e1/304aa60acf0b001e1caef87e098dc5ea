@@ -1,0 +1,27 @@
+package com.bharath.entities;
+
+import java.sql.Timestamp;
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class Flight extends AbstractEntity {
+
+	private String flightNumber;
+	private String operatingAirlines;
+	private String departureCity;
+	private String arrivalCity;
+	@DateTimeFormat(pattern = "MM-dd-yyyy")
+	@Temporal(TemporalType.DATE)
+	private LocalDate dateOfDeparture;
+	private Timestamp estimatedDepartureTime;
+
+}

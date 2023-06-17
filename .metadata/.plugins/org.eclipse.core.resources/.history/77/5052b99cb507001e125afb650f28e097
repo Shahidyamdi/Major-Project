@@ -1,0 +1,15 @@
+package com.bharath.Repo;
+
+import java.util.Date;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.bharath.entities.Flight;
+
+public interface FlightRepository extends JpaRepository<Flight, Long> {
+
+	void findFlights(String from, String to, Date depatureDate);
+
+	
+
+}
